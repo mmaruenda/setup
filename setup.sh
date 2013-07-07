@@ -44,3 +44,9 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+#Change backspace emacs
+echo ";; Try this first, which makes <DELETE> act as <DEL>" >> dotfiles/.emacs.d/init.el
+echo "(normal-erase-is-backspace-mode 0)" >> dotfiles/.emacs.d/init.el
+echo ";; Try this, if the above doesn't work, which makes <BACKSPACE> act as <DEL>" >> dotfiles/.emacs.d/init.el
+echo ";(normal-erase-is-backspace-mode 1)" >> dotfiles/.emacs.d/init.el
+
