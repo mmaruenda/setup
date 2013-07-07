@@ -50,3 +50,15 @@ echo "(normal-erase-is-backspace-mode 0)" >> dotfiles/.emacs.d/init.el
 echo ";; Try this, if the above doesn't work, which makes <BACKSPACE> act as <DEL>" >> dotfiles/.emacs.d/init.el
 echo ";(normal-erase-is-backspace-mode 1)" >> dotfiles/.emacs.d/init.el
 
+
+#Install node.js and NPM
+sudo apt-get update
+#Install a special package
+sudo apt-get install -y python-software-properties python g++ make
+#Add a new repository for apt-get to search
+sudo add-apt-repository ppa:chris-lea/node.js
+#Update apt-get’s knowledge of which packages are where
+sudo apt-get update
+#Now install nodejs and npm
+sudo apt-get install -y nodejs
+
